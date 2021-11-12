@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,27 +10,29 @@
   <link rel="stylesheet" href="./css/styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Haap.</title>
 </head>
   <header>
     <nav id="navbar">
       <div class="container"> 
-        <img src="Desktop/Hero Image.png" alt="">
-        <h1 class="logo"><a href="index.html"></a></h1>
-      <ul id="about">
-        <li><a class="current" href="index.html">Blog</a></li>
-        <li><a class="info" href="about.html">Get Early Access</a></li>
+        <div class="top_bar">
+          <div class="logo"></div>
+          <div class="top_bar__content">
+            <a class="current" href="index.html">Blog</a>
+            <a class="info" href="about.html">Get Early Access</a>
+          </div>
+        </div>
         <div class="content">
-          <h1 class="heading" >
-            Coliving and apartments <span>for today's renter </span> 
+          <h1 class="heading">
+            Coliving and apartments for today's renter
           </h1>
          <p class="lead"> 
           Find all-inclusive and beautifully designed spaces in your <span>city for less cost.</span> 
          </p>
+               <a href="" class="btn">Get Early Access</a> 
         </div>
-       <!-- <a href="#what" class="btn">Get Early Access</a> -->
-      </div>
     </nav>
   </header>
 
@@ -82,10 +83,12 @@
 
 
    <div class="article">
-    <h1>Get value with haap</h1>
-    <p>Save more when you let us handle your housing needs.</p>
-    <div class="item"></div>
-    <table>
+    <div class="savings">
+      <h1 class="savings_h1">Get value with haap</h1>
+    <p class="savings_p">Save more when you let us handle your housing needs.</p>
+    </div>
+    <div class="article-table">
+     <table>
       <tr>
         <td></td>
         <td id="F"><img src="./image/Haap Logo - Coloured.svg" alt="Logo"></td> 
@@ -144,139 +147,177 @@
         <td id="T">Total:</td>
         <td id="T">₦60,000</td>
         <td id="T">₦45,100 - ₦72,600</td>
-      </tr>
-    </table>
-    <h3 class="I">
-      Haap bedrooms (excluding shared spaces) also come with at least <br> <span id="T"> ₦500,000 </span>  worth of standard furnishing. <br>
-How do you beat that?
-    </h3>
+      </tr> 
+    </table> 
+    <div class="item"></div>
+</div>
+    <div class="I">
+      <p>
+        Haap bedrooms (excluding shared spaces) also come with at least <br> <span id="T"> ₦500,000 </span>  worth of standard furnishing. <br>
+  How do you beat that?
+      </p>
+     </div>
    </div>
-  <div class="Design">
-       <div class="A">
-         <div id="A-content">
-          <h2 id="text-H">All-inclusive living. <br>
-            Designed just for you.</h2>
-            <p id="text-P">By incorporating evidence-based design <br> approaches as well as deep learning, we <br> ensure that Haap spaces are not only beautiful <br> but also offer maximum happiness.</p>
+      <div class="Design">
+         <div class="design_structure">
+           <div id="structure">
+            <h2 id="text-H">All-inclusive living. <br>
+              Designed just for you.</h2>
+              <p id="text-P">By incorporating evidence-based design <br> approaches as well as deep learning, we <br> ensure that Haap spaces are not only beautiful <br> but also offer maximum happiness.</p>
+           </div> 
+            <img src="./image/Desktop/Images/Image Slideshow.png" alt="sitting room"> 
          </div>
-        <img src="./image/Desktop/Images/Image Slideshow.png" alt="sitting room">
-       </div> 
-    <a href="#what" class="m-button">Get Early Access</a>
+         <div class=" Things">
+        
+            <div>
+                <img src="./image/Desktop/Icons/streamline-icon-house-apartment@18x18 1.svg" alt="house apartment">
+              <h2>Fully furnished</h2>
+              <p>Our spaces are fully furnished with quality pieces to ensure your stay is pleasant.</p>
+            </div>
 
-       <div class="Things-1">
-        <div>
-            <img src="./image/Desktop/Icons/streamline-icon-house-apartment@18x18 1.svg" alt="house apartment">
-          <h2>Fully furnished</h2>
-          <p>Our spaces are fully furnished with quality pieces to ensure your stay is pleasant.</p>
-        </div>
-       <div>
-            <img src="./image/Desktop/Icons/Cleaning.svg" alt="cleaning">
-            <h2>Weekly cleaning</h2>
-            <p>You are assured of deep cleaning of all shared spaces at least once a week.</p>
+           <div>
+                <img src="./image/Desktop/Icons/Cleaning.svg" alt="cleaning">
+                <h2>Weekly cleaning</h2>
+                <p>You are assured of deep cleaning of all shared spaces at least once a week.</p>
+              </div>
+
+              <div>
+                  <img src="./image/Desktop/Icons/streamline-icon-wifi@18x18 1.svg" alt="wifi">
+                <h2>Free wifi</h2>
+                <p>Free commercial grade wifi at no additional cost.</p>
           </div>
-          <div>
-              <img src="./image/Desktop/Icons/streamline-icon-wifi@18x18 1.svg" alt="wifi">
-            <h2>Free wifi</h2>
-            <p>Free commercial grade wifi at no additional cost.</p>
-      </div>
+           
+              <div>
+                  <img src="./image/Desktop/Icons/streamline-icon-restaurant-dishes@18x18 1.svg" alt="restaurant dish">
+                <h2>Basic supplies</h2>
+                <p>Pots, pans, plates, and other sanitary items are included in your plan just so you don't have to run those pesky errands. </p>
+              </div>
+
+                <div>
+                  <img src="./image/Desktop/Icons/Bed.svg" alt="bed"> 
+                    <h2>Private bedroom</h2>
+                    <p>Our bedrooms are furnished with all the necessary items you need while still providing room for you to personalize it.</p>
+                </div>
+               
+              <div>
+                <img src="./image/Desktop/Icons/streamline-icon-laundry-machine-2@18x18 1.svg" alt="laundry machine">
+                <h2>Free laundry service</h2>
+                <p>Our bedrooms are furnished with all the necessary items you need while still providing room for you to personalize it.</p>
+              </div>
+    
+              <div>
+                  <img src="./image/Desktop/Icons/streamline-icon-real-estate-search-house-target@18x18 1.svg" alt="house target">
+                <h2>Free transfers</h2>
+                <p>Moving from Victoria Island to Gwarimpa? No worries! as you can alway put in a request to move to another space within the Haap community.</p>
+              </div>
+
+              <div>
+                  <img src="./image/Desktop/Icons/streamline-icon-house-apartment@18x18 1.svg" alt="house apartment">
+                <h2>Fully stocked kitchen</h2>
+                <p>Do you like toast or hate doing the dishes? We got you covered as our kitchens come with high-end appliances, dishware and other essentials. </p>
+              </div>
+              <div> 
+                  <img src="./image/Desktop/Icons/streamline-icon-flash-1@18x18 1.svg" alt="flash">
+                <h2>Property services</h2>
+                <p>Our property services team are on standby to ensure our spaces are in top shape at all times. So you won't be needing your electrician, plumber or generator man anytime soon - you've suffered enough.</p>
+              </div>
+         </div>
+         <div class="on">
+          <a href="" class="button">Get Early Access</a>
+         </div>
+       
        </div>
-        <div class="Things-2">
-          <div>
-              <img src="./image/Desktop/Icons/streamline-icon-restaurant-dishes@18x18 1.svg" alt="restaurant dish">
-            <h2>Basic supplies</h2>
-            <p>Pots, pans, plates, and other sanitary items are included in your plan just so you don't have to run those pesky errands. </p>
-          </div>
-          <div>
-              <img src="./image/Desktop/Icons/Bed.svg" alt="bed">
-            <h2>Private bedroom</h2>
-            <p>Our bedrooms are furnished with all the necessary items you need while still providing room for you to personalize it.</p>
-          </div>
-          <div>
-              <img src="./image/Desktop/Icons/streamline-icon-laundry-machine-2@18x18 1.svg" alt="laundry machine">
-            <h2>Free laundry service</h2>
-            <p>Our bedrooms are furnished with all the necessary items you need while still providing room for you to personalize it.</p>
-          </div>
-        </div>
-
-        <div class="Things-3">
-          <div>
-              <img src="./image/Desktop/Icons/streamline-icon-real-estate-search-house-target@18x18 1.svg" alt="house target">
-            <h2>Free transfers</h2>
-            <p>Moving from Victoria Island to Gwarimpa? No worries! as you can alway put in a request to move to another space within the Haap community.</p>
-          </div>
-          <div>
-              <img src="./image/Desktop/Icons/streamline-icon-house-apartment@18x18 1.svg" alt="house apartment">
-            <h2>Fully stocked kitchen</h2>
-            <p>Do you like toast or hate doing the dishes? We got you covered as our kitchens come with high-end appliances, dishware and other essentials. </p>
-          </div>
-          <div>
-              <img src="./image/Desktop/Icons/streamline-icon-flash-1@18x18 1.svg" alt="flash">
-            <h2>Property services</h2>
-            <p>Our property services team are on standby to ensure our spaces are in top shape at all times. So you won't be needing your electrician, plumber or generator man anytime soon - you've suffered enough.</p>
-          </div>
-        </div>
-        </div>
      
-     
-     <h2 id="Co">Co-living with community at its core</h2>
+    
      <div class="community">
-  <div class=" com-box">
-     <img src="./image/Desktop/Images/Image.png" alt="">
-  </div>
-     <div class="core">
-      <div class="com-box1">
-        <img src="./image/Desktop/Icons/streamline-icon-wifi-transfer-hand@18x18 1.svg" alt="transfer hand">
-        <h3>Stay Updated</h3>
-        <p>Through our mobile app, you’ll always be up to date on events, announcements and exclusive perks within the Haap community.</p>
+      <div class="co">
+        <h2 id="Co">Co-living with community at its core</h2>
+       </div>
+    <div class="spacing">
+      <div class="com-box">
+        <img src="./image/Desktop/Images/Image.png" alt="">
       </div>
-      <div class="com-box2">
-        <img src="./image/Desktop/Icons/streamline-icon-multiple-chat@18x18 1.svg" alt="multiple chat">
-        <h3>Meet like-minded people</h3>
-        <p>Meet people like yourself, or better still who’ll compliment you. Build meaningful relationships with like-minded people.</p>
-      </div>
-      <div class="com-box3">
-        <img src="./image/Desktop/Icons/Fireworks.svg" alt="fireworks">
-        <h3>Designed for community</h3>
-        <p>All Haap Spaces are designed to include common areas that can spark spontaneous relationships as well as closed events. </p>
-      </div>
+      <div class="core">
+        <div class="com-box1">
+          <img src="./image/Desktop/Icons/streamline-icon-wifi-transfer-hand@18x18 1.svg" alt="transfer hand">
+          <h3>Stay Updated</h3>
+          <p>Through our mobile app, you’ll always be up to date on events, announcements and exclusive perks within the Haap community.</p>
+        </div>
+        <div class="com-box2">
+          <img src="./image/Desktop/Icons/streamline-icon-multiple-chat@18x18 1.svg" alt="multiple chat">
+          <h3>Meet like-minded people</h3>
+          <p>Meet people like yourself, or better still who’ll compliment you. Build meaningful relationships with like-minded people.</p>
+        </div>
+        <div class="com-box3">
+          <img src="./image/Desktop/Icons/Fireworks.svg" alt="fireworks">
+          <h3>Designed for community</h3>
+          <p>All Haap Spaces are designed to include common areas that can spark spontaneous relationships as well as closed events. </p>
+        </div>
+       </div> 
+    </div>
      </div>
-     </div>
+
   <div class="FAQ">
   <h1 id="A">Q&A</h1>
-  <p class="B">Got any questions? We’ve got you covered.</p>
-    <div id="K">
-    <h2>What is co-living?  <img src="./image/Desktop/Icons/plus-circle.svg" alt="plus circle"></h2>
-    <p id="P">At Haap, coliving relates well with  convenience, affordability and flexibility. We offer beautiful and well furnished private rooms with access to shared spaces like lounge and kitchen.</p>
-    </div>
-    <div id="K1">
-       <p id="H1">Who is it for? <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"></p>
-    </div>
-     <div id="K2">
-      <p id="H2">What does the rent include? <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"></p>
-     </div>
-   <div id="K3">
-    <p id="H3">Who are my room mates? <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"></p>
-   </div>
-    <div id="K4">
-      <p id="H4">How do I move in? <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"></p>
-    </div>
-      <div id="K5">
-        <p id="H5">How does the space balance privacy? <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"></p>
+   <p class="B">Got any questions? We’ve got you covered.</p>
+   <div  class="Span__co">
+    <div class="column">
+      <div class="what">
+        <h2>What is co-living? </h2>
+        <img src="./image/Desktop/Icons/plus-circle.svg" alt="plus circle">
       </div>
+      <span>At Haap, coliving relates well with  convenience, affordability and flexibility. We offer beautiful and well furnished private rooms with access to shared spaces like lounge and kitchen.</span>
+      <hr>
+      </div>
+      
+      <div class="mates">
+         <span>Who is it for?</span>
+         <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"> 
+      </div>
+      <hr>
+       <div class="mates">
+        <span>What does the rent include?</span>
+        <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+       </div>
+       <hr>
+     <div class="mates">
+      <span>Who are my room mates?</span>
+      <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
      </div>
-
-  <div class="waitlist">
-    <div>
-      <h2>Haap is coming to your city!</h2>
-    <p>Join the waitlist and get early access to Haap when we launch!</p>
-    </div>
-    <div>
-      <a href="#what" class="R-button"> Get Early Access</a>
-    </div>
+     <hr>
+      <div class="mates">
+        <span>How do I move in?</span>
+        <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+      </div>
+      <hr>
+        <div class="mates">
+          <span>How does the space balance privacy?</span> 
+          <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+        </div>
+        <hr>
+   </div>
   </div>
-  <footer>
-    <img src="./image/Haap Logo - Coloured.svg" alt="logo">
-    <p>Ⓒ 2021 Haap Living. All rights reserved.</p>
-  </footer>
+
+    <div>
+        <footer>
+          <div class="waitlist">
+            <div>
+              <h2 class="waitlist_h2">Haap is coming to your city!</h2>
+              <p class="waitlist_p">Join the waitlist and get early access to Haap when we launch!</p> 
+            </div>
+        
+        <a href="" class="R-button"> Get Early Access</a>
+        </div>
+
+        <img src="./image/Haap Logo - Coloured.svg" alt="logo">
+        <p>Ⓒ 2021 Haap Living. All rights reserved.</p>
+        </footer>
+    </div>
+
+    
+
+
+
 
 </body>
 </html>
