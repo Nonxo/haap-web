@@ -7,7 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
@@ -16,12 +18,12 @@
 </head>
   <header>
     <nav id="navbar">
-      <div class="container"> 
+      <div class="full__container"> 
         <div class="top_bar">
           <div class="logo"></div>
           <div class="top_bar__content">
             <a class="current" href="index.html">Blog</a>
-            <a class="info" href="about.html">Get Early Access</a>
+            <button class="info" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Early Access</button>
           </div>
         </div>
         <div class="content">
@@ -31,133 +33,47 @@
          <p class="lead"> 
           Find all-inclusive and beautifully designed spaces in your <span>city for less cost.</span> 
          </p>
-               <a href="" class="btn">Get Early Access</a> 
+               <button type="button" class="click" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Early Access</button> 
         </div>
     </nav>
   </header>
 
 
     <div class="works">
-      <h4 id="text_works">HOW IT WORKS</h4>
-      <P id="p_works">Find the perfect space in four easy steps</P>
+      <div class="Type">
+        <h1>HOW IT WORKS</h1>
+        <p>Find the perfect space in four easy steps</P>
+      </div>
 
-      <div class="hint">
-        <!-- <div class="box-1"> -->
-          <div class="icon-1">
-        <img src="./image/Desktop/Icons/streamline-real-estate-search-house--real-estate--18x18.svg" alt="Real Estate house search">
-         
-            <h2 id="n-heading">Find shared accommodation</h2>
-            <p id="n-sub-heading">Browse through our curated list of great spaces available in your city.</p>
-          </div>
-            <!-- </div> -->
-           
-      <!-- <div class="box-2"> -->
-        <div class="icon-2">
-        <img src="./image/Desktop/Icons/streamline-icon-style-three-pin-bed@18x18 3.svg" alt="three pin bed">
+
+    <div class="hint">
+      <div class="sub__hint">
+    <img src="./image/Desktop/Icons/streamline-real-estate-search-house--real-estate--18x18.svg" alt="Real Estate house search">
+        <h2>Find shared accommodation</h2>
+        <p >Browse through our curated list of great spaces available in your city.</p>
+      </div>
        
-         <h2 id="n-heading">Book your space</h2>
-         <p id="n-sub-heading">With several spaces scattered around the country, you will definitely always find the right space for you at your desired location.</p>
-        </div>
-         <!-- </div> -->
-      
-      <!-- <div class="box-3"> -->
-        <div class="icon-3">
-         <img src="./image/Desktop/Icons/Bed.svg" alt="Bed">
-        
-           <h2 id="n-heading">Schedule a VR or Physical tour</h2>
-           <p id="n-sub-heading">View the entire home through your device with Virtual Reality or have a tour of the space in person.</p>
-        </div>
-           <!-- </div> -->
-
-      
-      <!-- <div class="box-4"> -->
-        <div class="icon-4">
-          <img src="./image/Desktop/Icons/Car.svg" alt="Car">
-        
-          <h2 id="n-heading">Pay for your space and move in</h2>
-          <p id="n-sub-heading">Make payment and move into your new space within 24 hours!</p>
-        </div>
-          <!-- </div> -->
-         </div>
+    <div class="sub__hint">
+    <img src="./image/Desktop/Icons/streamline-icon-style-three-pin-bed@18x18 3.svg" alt="three pin bed">
+     <h2>Book your space</h2>
+     <p >With several spaces scattered around the country, you will definitely always find the right space for you at your desired location.</p>
     </div>
 
-
-   <div class="article">
-    <div class="savings">
-      <h1 class="savings_h1">Get value with haap</h1>
-    <p class="savings_p">Save more when you let us handle your housing needs.</p>
+    <div class="sub__hint">
+     <img src="./image/Desktop/Icons/Bed.svg" alt="Bed">
+      <h2>Schedule a VR or Physical tour</h2>
+       <p>View the entire home through your device with Virtual Reality or have a tour of the space in person.</p>
     </div>
-    <div class="article-table">
-     <table>
-      <tr>
-        <td></td>
-        <td id="F"><img src="./image/Haap Logo - Coloured.svg" alt="Logo"></td> 
-        <td>Traditional Studio Apartment</td>
-       </tr>
 
-       <tr>
-         <td>Rent</td>
-         <td>Starting from ₦60,000 weekly</td>
-         <td>₦27,000 weekly</h3><span><h5>paid yearly at an average of ₦1.4M</h5></span></td>
-       </tr>
-
-       <tr>
-         <td>Utilities</td>
-         <td>Included</td>
-         <td>₦7,500 - ₦15,000 weekly</td>
-       </tr>
-
-       <tr>
-        <td>Agency fees</td>
-        <td>-</td>
-        <td>₦2,700 weekly</td>
-      </tr>
-
-      <tr>
-        <td>Legal fees</td>
-        <td>-</td>
-        <td>₦2,700 weekly</td>
-      </tr>
-
-      <tr>
-        <td>Caution fees</td>
-        <td>-</td>
-        <td>₦2,700 weekly</td>
-      </tr>
-
-      <tr>
-        <td>Cleaning</td>
-        <td>Included</td>
-        <td>₦5,000 - ₦7,500 weekly</td>
-      </tr>
-
-      <tr>
-        <td>Supplies</td>
-        <td>Included</td>
-        <td>₦5,000 - ₦7,500 weekly</td>
-      </tr>
-
-      <tr>
-        <td>Wifi</td>
-        <td>Included</td>
-        <td>₦5,000 - ₦7,500 weekly</td>
-      </tr>
-
-      <tr>
-        <td id="T">Total:</td>
-        <td id="T">₦60,000</td>
-        <td id="T">₦45,100 - ₦72,600</td>
-      </tr> 
-    </table> 
-    <div class="item"></div>
-</div>
-    <div class="I">
-      <p>
-        Haap bedrooms (excluding shared spaces) also come with at least <br> <span id="T"> ₦500,000 </span>  worth of standard furnishing. <br>
-  How do you beat that?
-      </p>
+    <div class="sub__hint">
+      <img src="./image/Desktop/Icons/Car.svg" alt="Car">
+    <h2>Pay for your space and move in</h2>
+      <p>Make payment and move into your new space within 24 hours!</p>
+    </div>
      </div>
-   </div>
+</div>
+
+
       <div class="Design">
          <div class="design_structure">
            <div id="structure">
@@ -165,10 +81,72 @@
               Designed just for you.</h2>
               <p id="text-P">By incorporating evidence-based design <br> approaches as well as deep learning, we <br> ensure that Haap spaces are not only beautiful <br> but also offer maximum happiness.</p>
            </div> 
-            <img src="./image/Desktop/Images/Image Slideshow.png" alt="sitting room"> 
+
+           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 3"></button>
+            </div>
+           
+           <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./image/Desktop/Images/Image Slideshow.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-3.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-4.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-1.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-2.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-5.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-7.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-6.png" class="d-block w-80" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Desktop/Images/Image Slideshow-8.png" class="d-block w-80" alt="...">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+
+
+
+
+
+
+
          </div>
+
          <div class=" Things">
-        
             <div>
                 <img src="./image/Desktop/Icons/streamline-icon-house-apartment@18x18 1.svg" alt="house apartment">
               <h2>Fully furnished</h2>
@@ -223,7 +201,8 @@
               </div>
          </div>
          <div class="on">
-          <a href="" class="button">Get Early Access</a>
+          <!-- <a href="" class="click2">Get Early Access</a> -->
+          <button type="button" class="click" id="myBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Early Access</button> 
          </div>
        
        </div>
@@ -264,57 +243,131 @@
     <div class="column">
       <div class="what">
         <h2>What is co-living? </h2>
-        <img src="./image/Desktop/Icons/plus-circle.svg" alt="plus circle">
+        <img  data-bs-target="#what" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" src="./image/Desktop/Icons/plus-circle.svg" alt="plus circle">
       </div>
-      <span>At Haap, coliving relates well with  convenience, affordability and flexibility. We offer beautiful and well furnished private rooms with access to shared spaces like lounge and kitchen.</span>
+     
+      <div class="collapse" id="what">
+        <div class="card card-body">
+          <span>At Haap, coliving relates well with  convenience, affordability and flexibility. We offer beautiful and well furnished private rooms with access to shared spaces like lounge and kitchen.</span>
+      
+        </div>
+      </div>
+
       <hr>
       </div>
       
       <div class="mates">
          <span>Who is it for?</span>
-         <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"> 
+         <img  data-bs-target="#for" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1"> 
       </div>
+
+      <div class="collapse" id="for">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+       </div>
+
       <hr>
        <div class="mates">
         <span>What does the rent include?</span>
-        <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+         <img data-bs-target="#rent" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" src="./image/Desktop/Icons/plus-circle-1.svg" >
        </div>
+
+       <div class="collapse" id="rent">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+       </div>
+
        <hr>
      <div class="mates">
       <span>Who are my room mates?</span>
-      <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+      <img data-bs-target="#room" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
      </div>
+
+     <div class="collapse" id="room">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+     </div>
+
      <hr>
       <div class="mates">
         <span>How do I move in?</span>
-        <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+        <img data-bs-target="#move" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
       </div>
+
+      <div class="collapse" id="move">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+       </div>
+
       <hr>
         <div class="mates">
           <span>How does the space balance privacy?</span> 
-          <img src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
+          <img data-bs-target="#space" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample" src="./image/Desktop/Icons/plus-circle-1.svg" alt="plus circle1">
         </div>
+
+        <div class="collapse" id="space">
+          <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
+
         <hr>
    </div>
   </div>
 
-    <div>
-        <footer>
-          <div class="waitlist">
-            <div>
-              <h2 class="waitlist_h2">Haap is coming to your city!</h2>
-              <p class="waitlist_p">Join the waitlist and get early access to Haap when we launch!</p> 
-            </div>
-        
-        <a href="" class="R-button"> Get Early Access</a>
-        </div>
 
+
+  <div class="waitlist">
+  <div>
+    <h2 class="waitlist_h2">Haap is coming to your city!</h2>
+    <p class="waitlist_p">Join the waitlist and get early access to Haap when we launch!</p> 
+  </div>
+
+      <a href="" class="click2"> Get Early Access</a>
+  
+</div>
+
+
+        <footer>  
         <img src="./image/Haap Logo - Coloured.svg" alt="logo">
         <p>Ⓒ 2021 Haap Living. All rights reserved.</p>
         </footer>
-    </div>
+   
 
-    
+      <!-- Bootstrap Section -->
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header d-flex flex-column bd-highlight mb-3">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" circle aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title">Get Early Access to Haap</h5>
+            <h6 class="modal_sub-title">Join the waitlist and get early access to Haap when we launch!</h6>
+            <form role="form">
+              <div class="form-group">
+                <label for="Full name"><span class="glyphicon glyphicon-user" id="glyphicon"></span> Full name</label>
+                <input type="text" class="form-control" id="Full name" placeholder="Adebola Adewale">
+              </div>
+              <div class="form-group">
+                <label for="Email address"><span class="glyphicon glyphicon-user" id="glyphicon"></span> Email address</label>
+                <input type="text" class="form-control" id="Email address" placeholder="example@gmail.com">
+              </div>
+              <div class="form-group">
+                <label for="Phone number"><span class="glyphicon glyphicon-user" id="glyphicon"></span> Phone number</label>
+                <input type="text" class="form-control" id="Phone number" placeholder="08012345678">
+              </div>
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Get Early Access</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
